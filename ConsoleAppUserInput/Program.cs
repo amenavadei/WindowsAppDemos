@@ -1,10 +1,12 @@
 ﻿
 int cow = 0;
 string word = "";
+string firstName = "";
+
 
 
 Console.WriteLine(" Please enter your name: " );
-string name = Console.ReadLine();
+string firstname = Console.ReadLine();
 
 
 Console.WriteLine("Please enter your age: ");
@@ -17,7 +19,7 @@ cow = Convert.ToInt32( Console.ReadLine());
 
 
 
-Console.WriteLine("Your name is: " + name + " and your age is: " + age + " and total number of cows is: " + cow);
+Console.WriteLine("Your name is: " + firstname + " and your age is: " + age + " and total number of cows is: " + cow);
 
 
 Console.WriteLine("Enter your best Word:");
