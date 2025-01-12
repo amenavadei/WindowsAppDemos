@@ -1,35 +1,48 @@
 ﻿
 int cow = 0;
 string word = "";
-string firstName = "";
+string? firstName = string.Empty;
+string lastName;
+decimal salary;
+char? gender = char.MinValue;
+bool working = true;
+int age;
+
+//Prompt the User 
+
+
+Console.Write("Please enter your name: " );
+firstName = Console.ReadLine();
+
+
+Console.Write("Enter your LastName: ");
+lastName = Console.ReadLine();
+
+
+Console.Write("Please enter your age: ");
+age = Convert.ToInt32(Console.ReadLine());
 
 
 
-Console.WriteLine(" Please enter your name: " );
-string firstname = Console.ReadLine();
+Console.Write("Enter your salary: ");
+salary = Convert.ToDecimal( Console.ReadLine());
 
 
-Console.WriteLine("Please enter your age: ");
-string input = Console.ReadLine();
-int age = int.Parse(input);
+Console.Write("Please enter your gender (M or F): ");
+gender = Convert.ToChar( Console.ReadLine());
+
+Console.Write("Are you working? (true or false): ");
+working = Convert.ToBoolean(Console.ReadLine());
+
+Console.WriteLine("***************************************************************");
+
+//Process the data 
+
+Console.WriteLine("Your name is: " + firstName + "\nYour lastName is : " + lastName + " \nYour age is: " + age);
+Console.WriteLine("Your Salary is: " + salary + "\nYour gender is: " + gender + "\nWorking status is " + working);
 
 
-Console.WriteLine("Please enter total number of cows: ");
-cow = Convert.ToInt32( Console.ReadLine());
 
-
-
-Console.WriteLine("Your name is: " + firstname + " and your age is: " + age + " and total number of cows is: " + cow);
-
-
-Console.WriteLine("Enter your best Word:");
-word = Console.ReadLine();
-
-Console.WriteLine("Your best word is: " + word);
  
 
 
-//string country = "";
-
-//Console.WriteLine("Please enter the COuntry Name you live in:?");
-//country= Console.ReadLine();
